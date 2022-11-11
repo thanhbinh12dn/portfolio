@@ -13,6 +13,42 @@ import PN1 from '../../assets/project_name1.png'
 import PN2 from '../../assets/project_name2.png'
 import PN3 from '../../assets/project_name3.png'
 import './Portfolio.css'
+import Project from '../Project/Project';
+
+const projects = [
+  {
+    id: 1,
+    img: PN1,
+    title: 'Project Name',
+    description: 'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.',
+    link: '#',
+    source: 'https://github.com'
+  },
+  {
+    id: 2,
+    img: PN2,
+    title: 'Project Name',
+    description: 'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.',
+    link: '#',
+    source: 'https://github.com'
+  },
+  {
+    id: 3,
+    img: PN3,
+    title: 'Project Name',
+    description: 'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.',
+    link: '#',
+    source: 'https://github.com'
+  },
+  {
+    id: 4,
+    img: PN1,
+    title: 'Project Name',
+    description: 'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.',
+    link: '#',
+    source: 'https://github.com'
+  },
+]
 
 const Portfolio = () => {
   return (
@@ -34,62 +70,13 @@ const Portfolio = () => {
           disableOnInteraction: false,
         }}
       >
-        <SwiperSlide className="project">
-          <div className="project__img">
-            <a href="#">
-              <img src={PN1} alt="Project" />
-            </a>
-          </div>
-          <div className="project__content">
-            <h3>Project Name</h3>
-            <p className="project__content-des">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-            <ul>
-              <li>React</li>
-            </ul>
-            <div className="project__content-btn">
-              <a href="#" className="btn">View Project</a>
-              <a href="#" className="btn">Live Demo</a>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className="project">
-          <div className="project__img">
-            <a href="#">
-              <img src={PN2} alt="Project Image" />
-            </a>
-          </div>
-          <div className="project__content">
-            <h3>Project Name</h3>
-            <p className="project__content-des">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-            <ul>
-              <li>React</li>
-            </ul>
-            <div className="project__content-btn">
-              <a href="#" className="btn">View Project</a>
-              <a href="#" className="btn">Live Demo</a>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className="project">
-          <div className="project__img">
-            <a href="#">
-              <img src={PN3} alt="Project Image" />
-            </a>
-          </div>
-          <div className="project__content">
-            <h3>Project Name</h3>
-            <p className="project__content-des">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-            <ul>
-              <li>React</li>
-            </ul>
-            <div className="project__content-btn">
-              <a href="#" className="btn">View Project</a>
-              <a href="#" className="btn">Live Demo</a>
-            </div>
-          </div>
-        </SwiperSlide>
+        {
+          projects.map(project => (
+            <SwiperSlide key={project.id} className="project">
+              <Project project={project}/>
+            </SwiperSlide>
+          ))
+        }
       </Swiper>
     </section>
   )

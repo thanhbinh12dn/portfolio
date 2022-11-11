@@ -1,0 +1,21 @@
+.project__img img{
+    height: 100%;
+}
+
+.project__content {
+    width: 50%;
+    flex: 1;
+    padding: 5rem 2rem 0;
+    background-color: var(--color-primary);
+}
+
+.project__content h3 {
+    font-size: 1.75rem;
+}
+
+.project__content-btn {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
