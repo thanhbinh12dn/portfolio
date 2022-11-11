@@ -1,0 +1,32 @@
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.skills__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.skills__card svg {
+    font-size: 2rem;
+}
+
+/* ============= Media Queries (Medium Devices) ============ */
+@media screen and (max-width: 1024px) {
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============= Media Queries (Small Devices) ============ */
+@media screen and (max-width: 600px) {
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
