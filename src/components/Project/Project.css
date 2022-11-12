@@ -19,3 +19,14 @@
     margin-top: 2rem;
     padding-bottom: 2rem;
 }
+
+/* ============= Media Queries (Small Devices) ============ */
+@media screen and (max-width: 600px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project__content {
+        width: 100%;
+    }
+}

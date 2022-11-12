@@ -45,4 +45,10 @@ textarea {
     .container.contact__container {
         width: var(--container-width-sm);
     }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
 }

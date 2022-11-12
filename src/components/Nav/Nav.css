@@ -30,3 +30,12 @@ nav a.active {
 nav a:hover {
     color: #000;
 }
+
+/* ============= Media Queries (Small Devices) ============ */
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        gap: 0.8rem;
+        width: max-content;
+    }
+}
