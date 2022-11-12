@@ -67,13 +67,7 @@ header {
         padding-top: 2rem;
     }
 
-    .mycv {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .header__socials,
-    .scroll__down {
+    .header__socials {
         display: none;
     }
 

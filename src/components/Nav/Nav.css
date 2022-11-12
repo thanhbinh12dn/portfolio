@@ -5,6 +5,7 @@ nav {
     transform: translateX(-50%);
     display: flex;
     gap: 0.8rem;
+    grid-gap: 0.8rem;
     background-color: #F3D180;
     max-width: 21.125rem;
     padding: 0.7rem 1.7rem;
@@ -35,7 +36,7 @@ nav a:hover {
 @media screen and (max-width: 600px) {
     nav {
         display: flex;
-        gap: 0.8rem;
-        width: max-content;
+        gap: 0.2rem;
+
     }
 }

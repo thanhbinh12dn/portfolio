@@ -15,7 +15,14 @@
 
 .project__content-btn {
     margin-top: 2rem;
-    /* padding-bottom: 2rem; */
+    padding-bottom: 2rem;
+}
+
+/* ============= Media Queries (Medium Devices) ============ */
+@media screen and (max-width: 1024px) {
+    .project__content-btn {
+        display: flex;
+    }
 }
 
 /* ============= Media Queries (Small Devices) ============ */
