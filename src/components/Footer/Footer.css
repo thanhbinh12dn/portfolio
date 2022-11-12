@@ -32,9 +32,17 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    grid-gap: 0.5rem;
 }
 
 .footer__copyright-icon {
     color: var(--color-primary-5);
     margin-top: -0.125rem;
+}
+
+/* ============= Media Queries (Small Devices) ============ */
+@media screen and (max-width: 600px) {
+    .footer__socials {
+        grid-gap: 1.2rem;
+    }
 }
