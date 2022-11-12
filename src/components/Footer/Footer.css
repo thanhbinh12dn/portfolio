@@ -12,7 +12,7 @@ footer {
 
 .footer__socials a {
     display: flex;
-    background-color: #6B2C39;
+    background-color: var(--color-primary-2);
     color: var(--color-primary);
     border-radius: 0.6rem;
     padding: 0.8rem;
@@ -36,12 +36,4 @@ footer {
 .footer__copyright-icon {
     color: var(--color-primary-5);
     margin-top: -0.125rem;
-}
-
-/* ============= Media Queries (Small Devices) ============ */
-@media screen and (max-width: 600px) {
-    .footer__socials {
-        display: flex;
-        gap: 1.2rem;
-    }
 }

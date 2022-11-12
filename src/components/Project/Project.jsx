@@ -15,7 +15,7 @@ const Project = ({project}) => {
             <ul>
                 <li>React</li>
             </ul>
-        <div className="project__content-btn">
+            <div className="project__content-btn">
                 <a href={project.source} className="btn">View Project</a>
                 <a href={project.link} className="btn">Live Demo</a>
             </div>

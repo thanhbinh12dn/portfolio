@@ -86,6 +86,10 @@ a:hover {
     transition: var(--transition);
 }
 
+.btn + .btn {
+    margin-left: 1.2rem;
+}
+
 .btn:hover {
     background-color: var(--color-primary-3);
     color: var(--color-bg);

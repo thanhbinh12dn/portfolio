@@ -16,9 +16,6 @@ header {
 
 .mycv {
     margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
 }
 
 .header__socials {

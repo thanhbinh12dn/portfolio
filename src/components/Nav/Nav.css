@@ -6,7 +6,7 @@ nav {
     display: flex;
     gap: 0.8rem;
     background-color: #F3D180;
-    width: max-content;
+    max-width: 21.125rem;
     padding: 0.7rem 1.7rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
