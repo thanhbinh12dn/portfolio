@@ -26,7 +26,11 @@ const About = () => {
           </div>
           <h3>Get To Know Me!</h3>
           <div className="about__content-info">
-            <p>Hi, My name is Bui Thanh Binh</p>
+            <p>Hi, My name is Bui Thanh Binh. I'm a fresh graduate. <br/>
+            I enjoy coding and love to learn about new technologies <br/>
+            I want to acquire all the skills I can use for my future profession. I want to be a Frontend
+            Developer soon.
+            </p>
           </div>
         </div>
       </div>
